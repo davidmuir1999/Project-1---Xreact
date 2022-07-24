@@ -14,6 +14,8 @@ html{
 body{
     max-width: 100vw;
     overflow-x: hidden;
+    display: block;
+    margin: 0px;
 }
 
 nav{
@@ -24,128 +26,91 @@ nav{
 .nav__container{
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px;
+    padding: 0px 24px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
-.nav__options{
-    text-decoration: underline;
+.logo__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a{
-    text-decoration: none;
+.logo{
+    max-height: 80px;
+    padding: 20px 4px 20px 20px ;
 }
 
-.Logo{
-    width: 160px;
+.logo__header{
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.logo__header:hover{
+    color: #6415ff;
+    opacity: 1;
+    
+}
+
+.nav__links{
+    display: flex;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    list-style: none;
+
 }
 
 .nav__link{
-    left: 16px;
+    margin-left: 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
-    font-weight: bolder;
-    padding: 18px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.nav__link--login{
+    margin-left: 58px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
 }
 
 .nav__link:hover{
     text-decoration: underline;
 }
 
-ul{
-    display: flex;
+.nav__link--login:hover{
+    text-decoration: underline;
 }
 
-li{
-    list-style-type: none;
-    padding: 0px 8px;
-}
-
-.nav__signup{
-    border: 16px solid #6415ff;
-    border-radius: 36px;
-    font-size: 16px;
-    font-weight: bold;
+.nav__link--button{
+    margin-left: 24px;
+    text-decoration: none;
+    font-size: 14px;
     color: white;
-    background-color: #6415ff;
-    opacity: 0.9;
-    padding: 0px 24px;
-    border-width: 12px;
-    transition: ease 300ms;
-}
-
-.nav__signup:hover{
-    opacity: 1;
-    
-}
-
-.header__section{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-}
-
-.header__main{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    padding: 60px 24px;
-}
-
-.header__img{
-    width: 60%;
-}
-
-.header__heading{
-    font-size: 38px;
-    margin-bottom: 40px;
-}
-
-.header__para{
-    font-size: 16px;
-    line-height: 24px;
-    opacity: 0.7;
-    margin-bottom: 40px;
-}
-
-.purple{
-    color: #6415ff;
-}
-
-.address__border{
-    border: 2px solid lightgray;
-    padding: 8px 12px;
-    border-radius: 999px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.address__txt{
-    border: 0;
-    font-size: 18px;
-    font-weight: lighter;
-    opacity: 0.8;
-}
-
-.address__btn{
-    border: 16px solid #6415ff;
-    border-radius: 999px;
-    font-size: 16px;
     font-weight: bold;
-    color: white;
+    border: 4px #6415ff solid;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
     background-color: #6415ff;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
     opacity: 0.9;
-    padding: 0px 4px;
-    border-width: 12px;
-    transition: ease 300ms;
+    transition: 300ms;
 }
 
-.address__btn:hover{
+.nav__link--button:hover{
     opacity: 1;
 }
